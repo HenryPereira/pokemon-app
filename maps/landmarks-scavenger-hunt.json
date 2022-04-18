@@ -1,0 +1,188 @@
+[
+    {
+        "type": "Feature",
+        "properties": {
+              "@id": "node/534040847",
+              "historic": "monument",
+              "name": "The Rock"
+        },
+        "geometry": {
+              "type": "Point",
+              "coordinates": [
+                    -87.6759271,
+                    42.0515656
+              ]
+        },
+        "id": "node/534040847"
+  },
+  {
+    "type": "Feature",
+    "properties": {
+          "@id": "node/1583266059",
+          "addr:city": "Evanston",
+          "addr:housenumber": "1745",
+          "addr:postcode": "60201",
+          "addr:street": "Sherman Avenue",
+          "addr:street:name": "Sherman",
+          "addr:street:type": "Avenue",
+          "alt_name": "Einstein Brothers Bagels",
+          "amenity": "fast_food",
+          "brand": "Einstein Bros. Bagels",
+          "brand:wikidata": "Q5349788",
+          "brand:wikipedia": "en:Einstein Bros. Bagels",
+          "cuisine": "bagel",
+          "name": "Einstein Bros. Bagels",
+          "takeaway": "yes"
+    },
+    "geometry": {
+          "type": "Point",
+          "coordinates": [
+                -87.6815513,
+                42.0498208
+          ]
+    },
+    "id": "node/1583266059"
+    },
+    {
+        "type": "Feature",
+        "properties": {
+              "@id": "node/4837676614",
+              "access": "customers",
+              "leisure": "sports_centre",
+              "name": "Norris Aquatics Center",
+              "operator": "Northwestern University",
+              "sport": "swimming"
+        },
+        "geometry": {
+              "type": "Point",
+              "coordinates": [
+                    -87.6736339,
+                    42.0600667
+              ]
+        },
+        "id": "node/4837676614"
+  },
+  {
+    "type": "Feature",
+    "properties": {
+          "@id": "node/4846512378",
+          "amenity": "bicycle_rental",
+          "brand": "Divvy",
+          "brand:wikidata": "Q16973938",
+          "brand:wikipedia": "en:Divvy",
+          "capacity": "15",
+          "divvy:id": "605",
+          "fee": "yes",
+          "name": "University Library (NU)",
+          "network": "Divvy",
+          "network:wikidata": "Q16973938",
+          "network:wikipedia": "en:Divvy",
+          "opening_hours": "24/7",
+          "operator": "Motivate",
+          "operator:type": "private",
+          "operator:wikidata": "Q4735954",
+          "operator:wikipedia": "en:Motivate (company)",
+          "payment:credit_cards": "yes"
+    },
+    "geometry": {
+          "type": "Point",
+          "coordinates": [
+                -87.6734197,
+                42.0529892
+          ]
+    },
+    "id": "node/4846512378"
+    },
+    {
+        "type": "Feature",
+        "properties": {
+              "@id": "node/4846512379",
+              "amenity": "bicycle_rental",
+              "brand": "Divvy",
+              "brand:wikidata": "Q16973938",
+              "brand:wikipedia": "en:Divvy",
+              "capacity": "15",
+              "divvy:id": "604",
+              "fee": "yes",
+              "name": "Sheridan Rd & Noyes St (NU)",
+              "network": "Divvy",
+              "network:wikidata": "Q16973938",
+              "network:wikipedia": "en:Divvy",
+              "opening_hours": "24/7",
+              "operator": "Motivate",
+              "operator:type": "private",
+              "operator:wikidata": "Q4735954",
+              "operator:wikipedia": "en:Motivate (company)",
+              "payment:credit_cards": "yes"
+        },
+        "geometry": {
+              "type": "Point",
+              "coordinates": [
+                    -87.6775114,
+                    42.0582259
+              ]
+        },
+        "id": "node/4846512379"
+    },
+    {
+        "type": "Feature",
+        "properties": {
+              "@id": "node/534040847",
+              "historic": "monument",
+              "name": "The Rock"
+        },
+        "geometry": {
+              "type": "Point",
+              "coordinates": [
+                    -87.6759271,
+                    42.0515656
+              ]
+        },
+        "id": "node/534040847"
+    },
+    {
+        "type": "Feature",
+        "properties": {
+              "@id": "node/1",
+              "name": "Technological Institute"
+        },
+        "geometry": {
+              "type": "Point",
+              "coordinates": [
+                    -87.675945,
+                    42.0576603
+              ]
+        },
+        "id": "node/1"
+    },
+    {
+        "type": "Feature",
+        "properties": {
+              "@id": "node/2",
+              "name": "The Lakefill"
+        },
+        "geometry": {
+              "type": "Point",
+              "coordinates": [
+                    -87.6738642,
+                    42.0555954
+              ]
+        },
+        "id": "node/2"
+    },
+    {
+        "type": "Feature",
+        "properties": {
+              "@id": "node/3",
+              "name": "Deering Library"
+        },
+        "geometry": {
+              "type": "Point",
+              "coordinates": [
+                    -87.6755615,
+                    42.0532182
+              ]
+        },
+        "id": "node/3"
+    }
+]
