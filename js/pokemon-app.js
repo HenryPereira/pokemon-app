@@ -20,22 +20,29 @@ let gameState = {
 	messages: []
 }
 
+goals = []
+
 // Create an interactive map
 // Change any of these functions
 
 let map = new InteractiveMap({
 	mapCenter: NU_CENTER,
+	riddles_divs: ``,
 
 	// Ranges
 	ranges: [500, 200, 90, 1], // must be in reverse order
 
 	initializeMap() {
 		// A good place to load landmarks
-		this.loadLandmarks("landmarks-shop-evanston", (landmark) => {
+		this.loadLandmarks("landmarks-scavenger-hunt", (landmark) => {
 			// Keep this landmark?
-
+			
 			// Keep all landmarks in the set
-			return true
+			console.log('riddle' in landmark['openMapData'])
+			if ('riddle' in landmark['openMapData']){
+				goals.push(landmark['openMapData'])
+			}
+			return landmark['openMapData'].hasOwnProperty('riddle')
 
 			// Only keep this landmark if its a store or amenity, e.g.
 			// return landmark.properties.amenity || landmark.properties.store
@@ -43,20 +50,33 @@ let map = new InteractiveMap({
 
 		// Create random landmarks
 		// You can also use this to create trails or clusters for the user to find
-		for (var i = 0; i < 10; i++) {
+		// for (var i = 0; i < 10; i++) {
 
-			// make a polar offset (radius, theta) 
-			// from the map's center (units are *approximately* meters)
-			let position = clonePolarOffset(NU_CENTER, 400*Math.random() + 300, 20*Math.random())
-			this.createLandmark({
-				pos: position,
-				name: words.getRandomWord(),
-			})
-		}
+		// 	// make a polar offset (radius, theta) 
+		// 	// from the map's center (units are *approximately* meters)
+		// 	let position = clonePolarOffset(NU_CENTER, 400*Math.random() + 300, 20*Math.random())
+		// 	this.createLandmark({
+		// 		pos: position,
+		// 		name: words.getRandomWord(),
+		// 	})
+		// }
 	},
 
 	update() {
 		// Do something each frame
+		// console.log(gameState.captured)
+		i=1
+		// console.log(gameState.captured)
+		// print()
+		this.riddles_divs = ``
+		goals.map((goal) => {
+			if(gameState.captured.includes(goal['name'])){
+				riddles_divs += `<div> ${i}.
+				${goal['riddle']}
+					</div>\n`
+				i++
+			}	
+		})
 	},
 
 	initializeLandmark: (landmark, isPlayer) => {
@@ -141,7 +161,10 @@ let map = new InteractiveMap({
 
 
 window.onload = (event) => {
-
+	console.log(map)
+	// console.log(map.landmarks[0])
+	console.log(goals[0]['riddle'])
+	console.log(riddles_divs)
 
 	const app = new Vue({
 		template: `
@@ -149,10 +172,15 @@ window.onload = (event) => {
 		<header></header>
 			<div id="main-columns">
 
-				<div class="main-column" style="flex:1;overflow:scroll;max-height:200px">
+				<div class="main-column" style="flex:1;overflow:scroll">
 					(TODO, add your own gamestate)
 					{{gameState}}
-					
+					<br>
+					<br>
+					<div>
+					<h2>Riddles</h2>
+					${map.riddles_divs}
+					</div>
 				</div>
 
 				<div class="main-column" style="overflow:hidden;width:${MAP_SIZE}px;height:${MAP_SIZE}px">
@@ -166,7 +194,6 @@ window.onload = (event) => {
 
 		data() {
 			return {
-			
 				map: map,
 				gameState: gameState
 			}

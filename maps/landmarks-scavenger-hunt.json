@@ -13,7 +13,8 @@
                     42.0515656
               ]
         },
-        "id": "node/534040847"
+        "id": "node/534040847",
+        "riddle": ""
   },
   {
     "type": "Feature",
@@ -60,7 +61,8 @@
                     42.0600667
               ]
         },
-        "id": "node/4837676614"
+        "id": "node/4837676614",
+        "riddle": ""
   },
   {
     "type": "Feature",
@@ -129,7 +131,8 @@
         "properties": {
               "@id": "node/534040847",
               "historic": "monument",
-              "name": "The Rock"
+              "name": "The Rock",
+              "riddle": "I’m pretty sturdy and I don’t move around. I can change colors and I’ve been here for a while. You’re free to change my style, since I am pretty versatile!"
         },
         "geometry": {
               "type": "Point",
@@ -144,7 +147,8 @@
         "type": "Feature",
         "properties": {
               "@id": "node/1",
-              "name": "Technological Institute"
+              "name": "Technological Institute",
+              "riddle": "I have a bunch of technology and it’s fairly technical in here, but technically if you enter me you might just disappear."
         },
         "geometry": {
               "type": "Point",
@@ -159,7 +163,8 @@
         "type": "Feature",
         "properties": {
               "@id": "node/2",
-              "name": "The Lakefill"
+              "name": "The Lakefill",
+              "riddle": "Lakefill fiddle"
         },
         "geometry": {
               "type": "Point",
@@ -169,12 +174,14 @@
               ]
         },
         "id": "node/2"
+
     },
     {
         "type": "Feature",
         "properties": {
               "@id": "node/3",
-              "name": "Deering Library"
+              "name": "Deering Library",
+              "riddle": "If only I had a dollar everytime someone told me I had a thing for Harry Potter"
         },
         "geometry": {
               "type": "Point",
