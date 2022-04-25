@@ -4,7 +4,12 @@
         "properties": {
               "@id": "node/534040847",
               "historic": "monument",
-              "name": "The Rock"
+              "name": "The Rock",
+              "hints": [
+                    "You will often find a tour group here",
+                    "Named after a famous wrestler/actor (maybe?)",
+                    "Paint me"
+              ]
         },
         "geometry": {
               "type": "Point",
@@ -32,7 +37,12 @@
           "brand:wikipedia": "en:Einstein Bros. Bagels",
           "cuisine": "bagel",
           "name": "Einstein Bros. Bagels",
-          "takeaway": "yes"
+          "takeaway": "yes",
+          "hints": [
+                "Loosely related to the theory of relativity",
+                "A good place to grab breakfast to-go",
+                "Bagels"
+          ]
     },
     "geometry": {
           "type": "Point",
@@ -51,7 +61,12 @@
               "leisure": "sports_centre",
               "name": "Norris Aquatics Center",
               "operator": "Northwestern University",
-              "sport": "swimming"
+              "sport": "swimming",
+              "hints": [
+                    "I am named after the same donor as another popular building",
+                    "The best place to swim during winter",
+                    "Located inside SPAC"
+              ]
         },
         "geometry": {
               "type": "Point",
@@ -83,7 +98,12 @@
           "operator:wikidata": "Q4735954",
           "operator:wikipedia": "en:Motivate (company)",
           "payment:credit_cards": "yes",
-          "i": 3
+          "i": 3,
+          "hints": [
+                "Possibly the building with the most boring name on campus",
+                "A good place to pull an all-nighter during finals",
+                "The most popular library"
+          ]
     },
     "geometry": {
           "type": "Point",
@@ -114,7 +134,12 @@
               "operator:type": "private",
               "operator:wikidata": "Q4735954",
               "operator:wikipedia": "en:Motivate (company)",
-              "payment:credit_cards": "yes"
+              "payment:credit_cards": "yes",
+              "hints": [
+                    "Come here to rent a bike",
+                    "On the most busy road",
+                    "Next to the most busy building"
+              ]
         },
         "geometry": {
               "type": "Point",
@@ -128,24 +153,13 @@
     {
         "type": "Feature",
         "properties": {
-              "@id": "node/534040847",
-              "historic": "monument",
-              "name": "The Rock"
-            },
-        "geometry": {
-              "type": "Point",
-              "coordinates": [
-                    -87.6759271,
-                    42.0515656
-              ]
-        },
-        "id": "node/534040847"
-    },
-    {
-        "type": "Feature",
-        "properties": {
               "@id": "node/1",
-              "name": "Technological Institute"
+              "name": "Technological Institute",
+              "hints": [
+                    "A very appropriately named building",
+                    "Notoriously difficult to navigate",
+                    "Largest building on campus"
+              ]
         },
         "geometry": {
               "type": "Point",
@@ -160,13 +174,18 @@
         "type": "Feature",
         "properties": {
               "@id": "node/2",
-              "name": "The Lakefill"
+              "name": "The Lakefill",
+              "hints": [
+                    "The highlight of NU's campus",
+                    "Has a very literal name",
+                    "The best place to come paint with friends"
+              ]
         },
         "geometry": {
               "type": "Point",
               "coordinates": [
-                    -87.6738642,
-                    42.0555954
+                    -87.671,
+                    42.055
               ]
         },
         "id": "node/2"
@@ -175,7 +194,13 @@
         "type": "Feature",
         "properties": {
               "@id": "node/3",
-              "name": "Deering Library"
+              "name": "Deering Library",
+              "hints": [
+                    "A popular spot for long study sessions",
+                    "Maybe named after an animal",
+                    "A classier version of Main"
+
+              ]
         },
         "geometry": {
               "type": "Point",
